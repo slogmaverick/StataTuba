@@ -4,17 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F771F36A-95A0-48EB-8FF0-72F07F508FEE}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{42FDD831-140F-48D3-A492-C954FCE8A889}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>StataTuba.Console</RootNamespace>
-    <AssemblyName>StataTuba.Console</AssemblyName>
+    <RootNamespace>StataTuba.ETL</RootNamespace>
+    <AssemblyName>StataTuba.ETL</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -43,21 +40,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Measure\TicTacTecaTuba.cs" />
+    <Compile Include="Measure\Trading.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Trading.cs" />
+    <Compile Include="Scraping\Misc.cs" />
+    <Compile Include="Scraping\Yahoo.cs" />
+    <Compile Include="Transform\Trading.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="_readMe.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ETL\StataTuba.ETL.csproj">
-      <Project>{42fdd831-140f-48d3-a492-c954fce8a889}</Project>
-      <Name>StataTuba.ETL</Name>
-    </ProjectReference>
     <ProjectReference Include="..\StataTuba.Common\StataTuba.Common.csproj">
       <Project>{284867b4-8368-449d-8ff9-4632447ae55e}</Project>
       <Name>StataTuba.Common</Name>
