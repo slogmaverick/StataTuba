@@ -1,6 +1,8 @@
 # StataTuba
 
-Console is where I spend most of my time.  Maybe someday I'll actually deploy a service, but for now.
+Source for Stock and Options analysis.
+Source for Sports Betting analysis.
+
 Here's what StataTuba does:
 Get and Store Data - This is the raw data.  Store a local copy so that we can write the transform code without having to hammer the source server.
 Transform Data - Transform the source data into a common format.  This might be CSV, JSON file, JSON in Mongo, SQL, etc.
@@ -16,7 +18,5 @@ IdentityServer - Future
 Service - Future
 
 This one is important
-1 - All Measures are calculated using the Adjust Prices, which are reflected in OHLC.  Any back testing, which involves spending money will use OrigOpen and OrigClose to accurately reflect the historical price paid.
+- All Measures are calculated using the Adjust Prices, which are reflected in OHLC.  Any back testing, which involves spending money will use OrigOpen and OrigClose to accurately reflect the historical price paid.
 
-
-Vars.cs - Should contain only global static vars.  If a var is only used in one namespace, DON'T put it here.
