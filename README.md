@@ -12,7 +12,7 @@ Here's what StataTuba does:
 Here are the projects:
 - Console - Just a place to dev and fuck-around in.
 - Common - (core, base, shared, etc)  Stuff that will be used a lot of places.  Classes and IO that supports those classes.  The older I get, the less I like multiple projects crowding up my solution.  Besides Common appears at the top of the solution, so far.
-- ETL - This is where scraping, transform and measures occur.  Fucking magic stuff!! (no, not Magic fucking stuff.)
+- ETL - This is where scraping, transform and measures occur.  
 - Web - Future
 - IdentityServer - Future
 - Service - Future
